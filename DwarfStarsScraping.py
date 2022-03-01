@@ -11,6 +11,10 @@ print(page)
 soup = bs(page.text,'html.parser')
 
 star_table = soup.find_all('table')
+
+table_rows = star_table[7].find_all('tr')
+
+
 print(len(star_table))
 
 
